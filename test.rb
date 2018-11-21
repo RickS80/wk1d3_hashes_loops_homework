@@ -1,66 +1,23 @@
-users = {
-  "Jonathan" => {
-    :twitter => "jonnyt",
-    :lottery_numbers => [6, 12, 49, 33, 45, 20],
-    :home_town => "Stirling",
-    :pets => [
-    {
-      :name => "fluffy",
-      :species => "cat"
-    },
-    {
-      :name => "fido",
-      :species => "dog"
-    },
-    {
-      :name => "spike",
-      :species => "dog"
-    }
-  ]
+united_kingdom = [
+  {
+    name: "Scotland",
+    population: 5295000,
+    capital: "Edinburgh"
   },
-  "Erik" => {
-    :twitter => "eriksf",
-    :lottery_numbers => [18, 34, 8, 11, 24],
-    :home_town => "Linlithgow",
-    :pets => [
-    {
-      :name => "nemo",
-      :species => "fish"
-    },
-    {
-      :name => "kevin",
-      :species => "fish"
-    },
-    {
-      :name => "spike",
-      :species => "dog"
-    },
-    {
-      :name => "rupert",
-      :species => "parrot"
-    }
-  ]
+  {
+    name: "Wales",
+    population: 3063000,
+    capital: "Swansea"
   },
-  "Avril" => {
-    :twitter => "bridgpally",
-    :lottery_numbers => [12, 14, 33, 38, 9, 25],
-    :home_town => "Dunbar",
-    :pets => [
-      {
-        :name => "monty",
-        :species => "snake"
-      }
-    ]
+  {
+    name: "England",
+    population: 53010000,
+    capital: "London"
   }
-}
+]
 
-users["Rick"] =
-  {:twitter => "rick",
-  :lottery_numbers => [1, 2, 3, 4, ],
-  :home_town => "Edinburgh",
-  :pets => [
-    :name => "Taipan",
-    :species => "cat"
-    ]
-}
-p users
+total_population = 0
+for country in united_kingdom
+  total_population = total_population + country[:population]
+end
+p total_population
