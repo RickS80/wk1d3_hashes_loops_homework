@@ -66,8 +66,7 @@ p users["Avril"][:pets][0][:species]
 e_lottery_numbers = users["Erik"][:lottery_numbers]
 sorted_lottery_numbers = e_lottery_numbers.sort
 p sorted_lottery_numbers[0]
-# 6. Return an array of Avril's lotav_lottery_numbers = []
-
+# 6. Return an array of Avril's even lottery numbers
 av_lottery_numbers = []
 for number in users["Avril"][:lottery_numbers]
   if number % 2 == 0

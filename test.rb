@@ -16,8 +16,8 @@ united_kingdom = [
   }
 ]
 
-total_population = 0
-for country in united_kingdom
-  total_population = total_population + country[:population]
-end
-p total_population
+united_kingdom << {
+    :name => "Northern Ireland",
+    :popluation => 1811000,
+    :capital => "Belfast"}
+p united_kingdom
