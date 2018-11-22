@@ -20,7 +20,7 @@ stops.unshift("Glasgow Queen St")
 ```
 3. Add `"Polmont"` at the appropriate point (between `"Falkirk High"` and `"Linlithgow"`)
 ```ruby
-stops.insert(4, "Polmont")
+stops.insert(3, "Polmont")
 ```
 4. Work out the index position of `"Linlithgow"`
 ```ruby
@@ -152,24 +152,24 @@ users["Erik"][:lottery_numbers].min
 		result << number if number.even?
 	end
 	p result
-	
+
 	```
-	
+
 	Or
-	
+
 	```ruby
 	def evil_even_numbers(array_of_numbers)
 	  result = []
 	  for number in array_of_numbers
 	    result.push(number) if(number.even?)
 	  end
-	
+
 	  return result
 	end
-	
+
 	array = users["Avril"][:lottery_numbers]
 	evens = evil_even_numbers(array)
-	
+
 	p evens
 	```
 
@@ -184,14 +184,14 @@ users["Erik"][:home_town] = "Edinburgh"
 ```
 
 9. Add a pet dog to Erik called "Fluffy"
-	
+
 	```ruby
-	
+
 	dog = {
 	  :name => "fluffy",
 	  :species => "dog"
 	}
-	
+
 	users["Erik"][:pets] << dog
 	```
 
@@ -209,7 +209,7 @@ users["Erik"][:home_town] = "Edinburgh"
 	      }
 	    ]
 	  }
-	
+
 	users["Tony"] = me
 	```
 

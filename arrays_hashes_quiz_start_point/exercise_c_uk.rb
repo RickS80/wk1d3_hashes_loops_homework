@@ -18,6 +18,7 @@ united_kingdom = [
 
 # 1. Change the capital of Wales from `"Swansea"` to `"Cardiff"`.
 united_kingdom[1][:capital] = "Cardiff"
+# NB that united_kingdom is an array, hence use [1] to access the second element
 p united_kingdom
 # 2. Create a Hash for Northern Ireland and add it to the `united_kingdom` array (The capital is Belfast, and the population is 1,811,000).
 united_kingdom << {

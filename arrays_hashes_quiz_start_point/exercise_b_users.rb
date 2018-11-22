@@ -62,6 +62,7 @@ p users["Erik"][:home_town]
 p users["Erik"][:lottery_numbers]
 # 4. Get the type of Avril's pet Monty
 p users["Avril"][:pets][0][:species]
+# this is [0] as this is the first pet in the array. There could have been several pets so would have required [1] etc
 # 5. Get the smallest of Erik's lottery numbers
 e_lottery_numbers = users["Erik"][:lottery_numbers]
 sorted_lottery_numbers = e_lottery_numbers.sort
@@ -69,6 +70,7 @@ p sorted_lottery_numbers[0]
 
 # or
 p users["Erik"][:lottery_numbers].min
+
 # 6. Return an array of Avril's even lottery numbers
 av_lottery_numbers = []
 for number in users["Avril"][:lottery_numbers]
@@ -86,6 +88,12 @@ p users["Erik"][:home_town]
 # 9. Add a pet dog to Erik called "Fluffy"
 users["Erik"][:pets]<<{:name => "Fluffy", :species => "Dog"}
 p users["Erik"][:pets]
+# or
+users["Erik"][:pets].push({:name =>"Fluffy", :species => "Dog"})
+# or
+pets_array = users["Erik"][:pets]
+new_pet = {:name =>"Fluffy", :species =>"Dog"}
+pets_array.push(new_put)
 # 10. Add another person to the users hash
 users["Rick"] =
   {:twitter => "rick",
