@@ -1,23 +1,58 @@
-united_kingdom = [
-  {
-    name: "Scotland",
-    population: 5295000,
-    capital: "Edinburgh"
+users = {
+  "Jonathan" => {
+    :twitter => "jonnyt",
+    :lottery_numbers => [6, 12, 49, 33, 45, 20],
+    :home_town => "Stirling",
+    :pets => [
+    {
+      :name => "fluffy",
+      :species => "cat"
+    },
+    {
+      :name => "fido",
+      :species => "dog"
+    },
+    {
+      :name => "spike",
+      :species => "dog"
+    }
+  ]
   },
-  {
-    name: "Wales",
-    population: 3063000,
-    capital: "Swansea"
+  "Erik" => {
+    :twitter => "eriksf",
+    :lottery_numbers => [18, 34, 8, 11, 24],
+    :home_town => "Linlithgow",
+    :pets => [
+    {
+      :name => "nemo",
+      :species => "fish"
+    },
+    {
+      :name => "kevin",
+      :species => "fish"
+    },
+    {
+      :name => "spike",
+      :species => "dog"
+    },
+    {
+      :name => "rupert",
+      :species => "parrot"
+    }
+  ]
   },
-  {
-    name: "England",
-    population: 53010000,
-    capital: "London"
+  "Avril" => {
+    :twitter => "bridgpally",
+    :lottery_numbers => [12, 14, 33, 38, 9, 25],
+    :home_town => "Dunbar",
+    :pets => [
+      {
+        :name => "monty",
+        :species => "snake"
+      }
+    ]
   }
-]
+}
 
-united_kingdom << {
-    :name => "Northern Ireland",
-    :popluation => 1811000,
-    :capital => "Belfast"}
-p united_kingdom
+
+p users["Erik"][:lottery_numbers].min
